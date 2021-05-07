@@ -1,0 +1,103 @@
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size:17px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline;
+	padding: 5px;
+}
+
+li a {
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: white;
+}
+
+li a:hover {
+	background-color: grey;
+}
+
+.main_container {
+	max-width: 800px;
+	margin: auto;
+	padding: 20px;
+}
+
+.header_containter {
+	
+}
+
+.nav_bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	background-color: #bbb;
+}
+
+.body_container {
+	
+}
+
+.article_holder {
+	display: flex;
+	flex-direction: column;
+}
+
+.article {
+	display: flex;
+	background-color: ;
+	height: 200px;
+	margin-bottom: 20px;
+	
+	/*
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	*/
+}
+
+.article_content {
+	padding: 5px;
+}
+
+.article_title {
+	width: 100%;
+	margin: 10px;
+	padding: 0px;
+	color: black;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.video_container {
+	display: flex;
+	flex-direction: column;
+}
+
+.video_row {
+	display: flex;
+}
+
+.videos {
+	margin: 5px;
+}
