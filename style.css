@@ -28,11 +28,11 @@ li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	color: white;
+	color: rgb(0, 0, 0);
 }
 
-li a:hover {
-	background-color: grey;
+li a:visited {
+	background-color: rgb(131, 131, 131);
 }
 
 .main_container {
@@ -78,6 +78,10 @@ li a:hover {
 
 .article_content {
 	padding: 5px;
+}
+
+.article_content a:visited{
+	color: black;
 }
 
 .article_title {
