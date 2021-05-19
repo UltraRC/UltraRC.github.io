@@ -31,9 +31,14 @@ li a {
 	color: rgb(0, 0, 0);
 }
 
+
 li a:visited {
 	background-color: rgb(131, 131, 131);
 }
+
+a {
+	color: inherit;
+  }
 
 .main_container {
 	max-width: 800px;
