@@ -28,12 +28,15 @@ li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	color: rgb(0, 0, 0);
 }
 
 
 li a:visited {
-	background-color: rgb(131, 131, 131);
+	background-color: rgb(130, 130, 130);
+}
+
+li a:hover {
+	background-color: rgb(120, 120, 120);
 }
 
 a {
@@ -52,7 +55,7 @@ a {
 	padding: 15px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
-	background-color: #bbb;
+	background-color: rgb(187, 187, 187);
 }
 
 .article_holder {
@@ -62,7 +65,7 @@ a {
 
 .article {
 	display: flex;
-	background-color: ;
+	background-color: rgb(230, 227, 227);
 	height: 200px;
 	margin-bottom: 20px;
 	
