@@ -48,8 +48,12 @@ a {
 	color: inherit;
   }
 
+.body_container{
+	padding-top: 10px;
+}
+
 .main_container {
-	max-width: 800px;
+	max-width: 900px;
 	margin: auto;
 	padding: 20px;
 }
