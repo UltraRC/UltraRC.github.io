@@ -74,15 +74,10 @@ a {
 
 .article {
 	display: flex;
-	background-color: rgb(230, 227, 227);
+	background-color: rgb(228, 228, 228);
 	height: 200px;
 	margin-bottom: 20px;
 	
-	/*
-	border: 1px;
-	border-style: solid;
-	border-color: black;
-	*/
 }
 
 .article_content {
