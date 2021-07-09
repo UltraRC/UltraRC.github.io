@@ -4,26 +4,13 @@
 <title>Reuben Web</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
-	<link rel="shortcut icon" href="icon.ico" type="image/x-icon"> 
+	<link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+	<script src="/csi.min.js"></script>
 
 </head>
 	<body>
 		<div class="main_container">
-			<div class="nav_bar">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="Articles/articles.html">Articles</a></li>
-					<li><a href="videos.html">Videos</a></li>
-					<a href="https://www.youtube.com/c/Ultrarc/videos">
-						<img src="Images/youtubeLogo.png" alt="github logo" style="height:30px;mix-blend-mode: multiply; float:right;">
-					</a>
-					<a href="https://github.com/UltraRC">
-						<img src="Images/githubLogo.png" alt="github logo" style="height:30px;mix-blend-mode: multiply; float:right;padding-right:10px;">
-					</a>
-				</ul>
-			</div>
-			<div class="header_container">
-			</div>
+			<nav data-include="nav.html"></nav>
 			
 			<div class="body_container">
 				<img src="Images/profilePicture.jfif" alt="DefaultImage"  style="float:left;margin:20px;">
@@ -42,14 +29,13 @@
 					<b>Github: </b><a href="https://github.com/UltraRC">Projects page</a><br>
 					<b>YouTube: </b><a href="https://www.youtube.com/c/Ultrarc/videos">Videos</a><br>
 				</p>
-				
-
+				<!--------------------------------- Article Material -------------------------------->
 				<div class="article_holder">
 					<h2>Projects</h2>
 					
 					<div class="article">
-						<a href="Articles/mechanicalSpider/mechanicalSpider.html">
-							<img src="Articles/mechanicalSpider/thumbnail.jpg" alt="DefaultImage" style="height:200px;">
+						<a href="Articles/mechanicalSpider/article.html">
+							<img src="Articles/mechanicalSpider/images/thumbnail.jpg" alt="DefaultImage" style="height:200px;">
 						</a>
 						<div class="article_content">
 							<a href="Articles/mechanicalSpider/mechanicalSpider.html" style="text-decoration:none;">
@@ -76,9 +62,7 @@
 							</a>
 						</div>
 					</div>
-
 				</div>
-
 			</div>
 		</div>
 	</body>

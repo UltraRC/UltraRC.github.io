@@ -58,15 +58,6 @@ a {
 	padding: 20px;
 }
 
-.nav_bar {
-	list-style-type: none;
-	margin: 0;
-	padding: 15px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	background-color: rgb(187, 187, 187);
-}
-
 .article_holder {
 	display: flex;
 	flex-direction: column;
