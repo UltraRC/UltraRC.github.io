@@ -6,16 +6,30 @@ h1 {
 h2 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 25px;
+	padding: 0px;
+	margin:10px 0px 15px 0px;
 }
 
 h3 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
+	margin: 0px;
+	padding:0px;
 }
 
 p {
 	font-family: 'Roboto', sans-serif;
 	font-size:17px;
+	margin:10px 0px 10px 0px;
+	padding:0px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin:0px;
+	padding:0px;
 }
 
 ul {
@@ -78,7 +92,8 @@ a {
 
 .article_content p{
 	padding-left: 10px;
-	margin: 0px;
+	margin: 10px;
+	padding:0px;
 }
 
 .article_content a:visited{
