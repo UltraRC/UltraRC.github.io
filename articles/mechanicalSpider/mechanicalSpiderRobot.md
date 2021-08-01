@@ -1,4 +1,4 @@
-# Mechanical Spider Robot
+# Mechanical Spider Robot yeet
 
 <img src="images/front_view.jpg" alt="DefaultImage" style="width: 100%;">
 
