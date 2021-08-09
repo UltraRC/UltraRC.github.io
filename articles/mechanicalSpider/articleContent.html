@@ -18,7 +18,18 @@
 <h2 id='electrical-components-and-wiring'>Electrical components and wiring</h2>
 <p><img src="images/diagram.jpg" alt="DefaultImage" style="width: 50%"></p>
 <p>&nbsp;</p>
-<p>There was a small list of different electrical components each of which serving some purpose. At the core of the project is an ESP32 microcontroller whos job is to take in user input from a remote control receiver. Using this data it controls the angle of the 18 servo motors spread across the six legs. Servos use PWM (pulse-width modulation) to control their angular position. A PCA9685 board is a PWM controller board which can broadcast upto 18 independed PWM signals. The servo motors from the left and right respective legs were connected to two of these boards. The PCA9685 uses I2C (I-squard C) as an input which was provided by the ESP32. In order to provide power and control signals to 18 servo motors, electrical components driving the servo motors needed to be provided with an appropriate power source. A battery</p>
+<p>&nbsp;</p>
+<p>The overall goal of the system is to control the movement of the robots six legs, this requires powering and controlling 18 servo motors. At the core of the robots control system is an ESP32, a 32 bit microcontroller. Feature of this microcontroller which contributed to me choosing it consisted of the following.</p>
+<ul>
+<li>I2C support </li>
+<li>Hardware interrupts</li>
+<li>WI-FI and Bluetooth</li>
+
+</ul>
+<p>Controlling 18 separate servo motors from a micro-controller is an electrical logistical task in terms of power and wiring. An open source board called the PCA9685 is a 16-channel PWM controller which when powered with 5V and an I2C control signal from the micro controller is able to control the angular position of up to 16 servo motors independently. As there were 18 servo motors to control, two of these boards were used to control the left and right sets of 3 legs. The I2C signal going to each is run in series as a chain with each board set to a separate address. </p>
+<p><img src="images/servoController.jpg" alt="DefaultImage" style="width: 50%"><img src="images/voltageRegulator.jpg" alt="DefaultImage" style="width: 50%;float:right;"></p>
+<p>&nbsp;</p>
+<p>There was a small list of different electrical components each of which serving some purpose. At the core of the project is an ESP32 microcontroller who&#39;s job is to take in user input from a remote control receiver. Using this data it controls the angle of the 18 servo motors spread across the six legs. Servos use PWM (pulse-width modulation) to control their angular position. A PCA9685 board is a PWM controller board which can broadcast up to 18 independent PWM signals. The servo motors from the left and right respective legs were connected to two of these boards. The PCA9685 uses I2C (I-squard C) as an input which was provided by the ESP32. In order to provide power and control signals to 18 servo motors, electrical components driving the servo motors needed to be provided with an appropriate power source. A battery</p>
 <p>12V battery would be connected to several 5V voltage regulators to power the the majority of the on board electrical components.</p>
 <h2 id='programming-phase'>Programming phase</h2>
 <p>The programming phase would finally give life this robot, providing the methods and logic to coordinate walking in response to user control inputs. Programming this robot could almost be considered its own project considering the breadth of functionality that was implemented. The program controlling the robot incudes processing user input, using inverse kinematics to calculate joint angle positions, and coordinating a walking movement pattern governed by the users input.</p>
