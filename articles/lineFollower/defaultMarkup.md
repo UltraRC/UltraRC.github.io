@@ -81,8 +81,6 @@ V_c = VCC * e^{\frac{t}{C_1R_1R_2}}
 $$
 The purpose of this is to reduce jerky changes in motor speed so that changes in the robot’s direction would be smooth.
 
- //TODO make latex equations work
-
 ### 3.2.2 - Pulse width modulation
 
  A common method for regulating the speed of an electric motor is to use pulse width modulation (PWM). Using PWM means that power is sent to the motor periodically in pulses with a constant frequency. This signal can be described using the duty cycle which is the percentage of the signal period that the signal is high (6V). 
