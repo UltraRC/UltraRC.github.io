@@ -24,6 +24,27 @@ p {
 	padding:0px;
 }
 
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure figcaption {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	opacity: 0.8;
+	margin: 10px;
+	padding:0px;
+	text-align: center;
+}
+
 li {
 	font-family: 'Roberto', sans-serif;
 	font-size: 17;
