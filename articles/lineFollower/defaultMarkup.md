@@ -129,7 +129,7 @@ A two-stage gearbox was the first proposed method for reducing the rotational sp
 When this design was tested there were several major problems. The gears did not mesh correctly and made a lot of noise when running. In places where the gears were running against each other as bearing surfaces, the plastic heated and fused together causing the gearbox to seize. The course length was roughly four meters in length, much less than stated 15 meter maximum in the given brief. This meant that the 1 m/s target speed was too fast. Not reducing the speed would mean that the robot would run straight of the course when it came to a corner.
 
 <figure>
-        <img src="images/gearbox.png" alt="Front view of robot" style="width: 50%;">
+        <img src="images/gearBox.png" alt="Front view of robot" style="width: 50%;">
         <figcaption>
             Figure 3.8 - Gearbox
     </figcaption>
