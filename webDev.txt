@@ -1,0 +1,8 @@
+Overall web changes:
+- Need image of myself to the front page.
+- Fix page resizing ==> Images should not get smaller, the page should just clip if you are using a smaller screen.
+- Make more mobile friendly
+- Find a good way to display equations
+
+compressor pedal article changes:
+- In circuit overview, add references to images instead of saying "first opamp circuit".

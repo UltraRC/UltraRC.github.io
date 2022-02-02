@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>compressorPedal</title>
+</head>
+<body><p>&nbsp;</p>
+<h1 id='electric-guitar-compressor-pedal'>Electric guitar compressor pedal</h1>
+<h2 id='1---overview--motivation'>1 - Overview / motivation</h2>
+<ul>
+<li>(E.g. wanted to improve PCB design and part sourcing with)</li>
+<li>Logistics of ordering parts for a project (BOM management)</li>
+
+</ul>
+<p>For a long time I have wanted to build my own electric guitar pedal. The concept of an audio compression always appealed to me both in terms of how audio compression circuits operate as well as an audio effect to use with my guitar. Audio compressors are devices which reduce the volume of a signal when a loud sound spike occurs while leaving the signal unaffected the rest of the time (basically). This has the effect of reducing the dynamic range of a signal, which means the volume of quiet sounds and loud sounds is reduced.</p>
+<p>While sifting  through articles about different compression circuits I stumbled across an <a href="http://www.valvewizard.co.uk/engineersthumb2.html" target="_blank">article by The Valve Wizard</a> which features a compression circuit called the engineers thumb which has several advantages compared to more common designs. The design includes options for all five of the controls commonly found in an audio compressor circuits, not least of which includes the option for all five controls. Attack, release, threshold, ratio, and level.</p>
+<p>The goal for the project was to take this design and package it into a custom drilled enclosure with all the necessary switches, knobs and jacks. I also designed a custom PCB derived from the original circuit (more details later).</p>
+<figure>
+        <img src="images/banner.png" alt="Front view of robot" style="width: 100%;">
+        <figcaption>
+            Figure 1.1 - Inside and outside of the pedal
+    </figcaption>
+</figure>
+<h2 id='2---circuit-overview-and-pcb--design'>2 - Circuit overview and PCB  design</h2>
+<p>The <a href="http://www.valvewizard.co.uk/engineersthumb2.html" target="_blank">article</a> written by The Valve Wizard has has a good description on the operation of the circuit, I will provide however provide an explanation here as well. The signal from the guitar is fed into an opamp (operational amplifier) set up with negative feed back. In the feedback loop of this opamp circuit is an operational transconductance amplifier or OTA for short. This device essentially acts as a current controlled resister. A resistor in an opamp feedback loop sets the gain for the circuit meaning that this part of the circuit is a current controlled amplifier. Changing the current flowing into the OTA changes its resistance which reduces the gain of the opamp circuit it is placed within. The output of this opamp circuit after passing through a volume potentiometer and a DC blocking capacitor is fed to the output.</p>
+<p>There is another circuit operating on a separate branch of components which measures the amplitude of the input signal. This separate circuit outputs a current relative to this amplitude it is measuring to the OTA thereby adjusting the gain of the first opamp circuit by an amount dependant on the input amplitude. On of claimed advantages of this circuit design is that because the OTA is in the feedback loop of the first opamp circuit, when the gain of the OTA is at its highest, the opamp circuit gain is at its lowest. This means that at idle (opamp circuit is at highest gain) while no signal is being sent to the pedal, the OTA will be functioning at its lowest and because OTA&#39;s produce a lot of noise the overall noise of the circuit will be lower with this configuration.</p>
+<figure>
+        <img src="images/schematic.jpg" alt="Front view of robot" width="100%">
+        <figcaption>
+            Figure 2.1 - Original schematic by The Valve Wizard
+    </figcaption>
+</figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 id='3---packaging-and-construction'>3 - Packaging and construction</h2>
+<p>Stages of design:</p>
+<ul>
+<li>PCB design</li>
+<li>Enclosure layout</li>
+<li>Enclosure</li>
+
+</ul>
+<p>The first task to complete was the design of the PCB. Using KiCad I re-drew the circuit schematic based on the original circuit in Figure 2.1. After that I chose all of the footprints for the components opting for mostly through hole parts. The choice to use through hole parts is mostly due to the ease of PCB assembly and circuit debugging. A spreadsheet displaying links to purchase locations for all parts, along with their associated part quantities, footprints and prices was made.</p>
+<figure>
+        <img src="images/pcbDesign.png" alt="Front view of robot" width="45%">
+        <figcaption>
+            Figure 3.1 - PCB design in KiCad
+    </figcaption>
+</figure>
+<p>After that the PCB was routed using KiCad. The footprints for the three potentiometers which control attack, ratio, and level were positioned precisely to line up with the holes on the case. The majority of the effort in designing the PCB was in how to interface with externally mounted components, switches, jacks, and LED&#39;s. For each of these components there needs to be a solder pad or header pin connection, then soldering wires between these pads to the correct pins on each component. In future I will limit how many components that I mount off-board to reduce the time that is required to make connections to externally mounted components.</p>
+<figure>
+        <img src="images/pcb.jpg" alt="Front view of robot" width="75%">
+        <figcaption>
+            Figure 3.2 - PCB's manufactured by JLC PCB
+    </figcaption>
+</figure>
+<p>The hardware that I used for this project was from <a href="https://www.taydaelectronics.com/" target="_blank">Tayda Electronics</a>. They sell a variety of enclosures that are fit for housing guitar effects projects. Their website also allows you to send dimensions for them to pre-drill holes in the enclosure for all of the off-board components (switches, jacks, on LED) before painting and shipping it to you. Very convenient.</p>
+<figure>
+        <img src="images/assemblyWithoutLid.png" alt="Front view of robot" width="80%">
+        <figcaption>
+            Figure 3.3 - Render of whole assembly without lid
+    </figcaption>
+</figure>
+<p>&nbsp;</p>
+<h2 id='conclusion-things--learnt-possible-changes-and-sound-clip'>Conclusion (things  learnt, possible changes) and sound clip?</h2>
+<p>The hardest part of the design process seems to be interfacing between the PCB and external components. </p>
+</body>
+</html>

@@ -1,6 +1,7 @@
 h1 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 35px;
+	font-size: 37px;
+	font-weight: 200;
 }
 
 h2 {
@@ -8,6 +9,7 @@ h2 {
 	font-size: 25px;
 	padding: 0px;
 	margin:10px 0px 15px 0px;
+	font-weight: 300;
 }
 
 h3 {
@@ -15,11 +17,12 @@ h3 {
 	font-size: 20px;
 	margin: 0px;
 	padding:0px;
+	font-weight: 200;
 }
 
 p {
 	font-family: 'Roboto', sans-serif;
-	font-size:17px;
+	font-size:16px;
 	margin:10px 0px 10px 0px;
 	padding:0px;
 }
@@ -36,10 +39,16 @@ figure img {
 	margin-right: auto;
 }
 
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 figure figcaption {
 	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	opacity: 0.8;
+	font-size: 14.5px;
+	font-weight: 700;
+	opacity: 0.5;
 	margin: 10px;
 	padding:0px;
 	text-align: center;
