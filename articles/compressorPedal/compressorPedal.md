@@ -17,9 +17,10 @@ The goal for the project was to take this design and package it into a custom dr
 <figure>
         <img src="images/banner.png" alt="Front view of robot" style="width: 100%;">
         <figcaption>
-            Figure 1.1 - Original schematic by The Valve Wizard
+            Figure 1.1 - Inside and outside of the pedal
     </figcaption>
 </figure>
+
 
 ## 2 - Circuit overview and PCB  design
 
@@ -38,7 +39,7 @@ There is another circuit operating on a separate branch of components which meas
 
 
 
-## 3 - Packaging / construction and  interface
+## 3 - Packaging and construction
 
 Stages of design:
 
@@ -55,7 +56,7 @@ The first task to complete was the design of the PCB. Using KiCad I re-drew the 
     </figcaption>
 </figure>
 
-After that the PCB was routed using KiCad. The footprints for the three potentiometers which control attack, ratio, and level were positioned precisely to line up with the holes on the case. The majority of the effort in designing the PCB was in how to interface with externally mounted components. Anything from switches, jacks
+After that the PCB was routed using KiCad. The footprints for the three potentiometers which control attack, ratio, and level were positioned precisely to line up with the holes on the case. The majority of the effort in designing the PCB was in how to interface with externally mounted components, switches, jacks, and LED's. For each of these components there needs to be a solder pad or header pin connection, then soldering wires between these pads to the correct pins on each component. In future I will limit how many components that I mount off-board to reduce the time that is required to make connections to externally mounted components.
 
 <figure>
         <img src="images/pcb.jpg" alt="Front view of robot" width = "75%">
@@ -69,9 +70,10 @@ The hardware that I used for this project was from <a href="https://www.taydaele
 <figure>
         <img src="images/assemblyWithoutLid.png" alt="Front view of robot" width = "80%">
         <figcaption>
-            Figure 3.1 - Render of whole assembly without lid
+            Figure 3.3 - Render of whole assembly without lid
     </figcaption>
 </figure>
+
 
 
 
