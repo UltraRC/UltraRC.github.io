@@ -36,7 +36,7 @@ As a point of interest, OTA's tend to produce a relatively large amount of noise
 The first task to complete was the design of the PCB. Using KiCad I re-drew the circuit schematic based on the original circuit in Figure 2.1. After that I chose all of the footprints for the components opting for mostly through hole parts. The choice to use through hole parts is mostly due to the ease of PCB assembly and circuit debugging. A spreadsheet with links to purchase locations for all parts, along with their associated part quantities, footprints and prices was made. After that the PCB was routed using KiCad, shown in figure 3.1.
 
 <figure>
-        <img src="images/pcbDesign.PNG" alt="Front view of robot" width = "45%">
+        <img src="images/pcbDesign.png" alt="Front view of robot" width = "45%">
         <figcaption>
             Figure 3.1 - PCB design in KiCad
     </figcaption>
