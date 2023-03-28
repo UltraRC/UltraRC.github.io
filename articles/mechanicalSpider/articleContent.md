@@ -1,7 +1,5 @@
 # Mechanical Spider Robot
 
-<iframe src="https://www.youtube.com/embed/zBCx1iNJ3x0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 56%;"></iframe>
-
 <img src="images/front_view.jpg" alt="DefaultImage" style="width: 100%;">
 
 ## Introduction
@@ -52,4 +50,6 @@ The programming phase would finally give life this robot, providing the methods 
 
 This part of the project is under construction and will be documented here when complete.
 
-​        
+## Video of Spider Operating
+
+<iframe src="https://www.youtube.com/embed/zBCx1iNJ3x0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 70%; height: 350px; margin: 0 auto; display: block;"></iframe>
