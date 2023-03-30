@@ -1,5 +1,5 @@
 # Spool Holder for 3D printer
 
-<iframe width="600" height="340" src="https://www.youtube.com/embed/sI86Lteaccw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/sI86Lteaccw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 70%; height: 350px; margin: 0 auto; display: block;"></iframe>
 
 My 3D printer (Tevo Tarantula) did not come with a spool holder. For the time I have owned this machine, whenever I printed anything, I would periodically  check the print and manually unwind an appropriate amount of 3D printing filament. More recently I have rested the filament spool on the wheel of my skateboard which has a bearing in it allowing the spool to unwind freely. This video uses this idea of the spool simply resting on a bearing to make for a more permanent solution to the problem.
