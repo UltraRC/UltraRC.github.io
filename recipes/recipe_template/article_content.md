@@ -1,6 +1,6 @@
 # Classic Chocolate Chip Cookies
 <button onclick="location.href='../recipes.html'">Back to Recipes</button>
-<img src="../../articles/mechanicalSpider/images/body.png" alt="Chocolate Chip Cookies" style="float: right; margin-left: 20px; max-width: 50%;" />
+<img src="images/default_image.jpg" alt="Meatballs" style="float: right; margin-left: 20px; max-width: 50%;" />
 ## Ingredients
 - 2 1/4 cups all-purpose flour
 - 1 tsp baking soda
