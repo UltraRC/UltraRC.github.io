@@ -1,6 +1,9 @@
 # Mediterranean Meatballs
 <button onclick="location.href='../recipes.html'">Back to Recipes</button>
 <img src="images/default_image.jpg" alt="Meatballs" style="float: right; margin-left: 20px; max-width: 50%;" />
+
+**Serves 5**
+
 ## Ingredients
 - 500 grams minced pork
 - 1/2 cup chopped fresh herbs
