@@ -4,7 +4,7 @@
 ## Ingredients
 - 400 mL lukewarm water
 - 4 tablespoons olive oil
-- 540 g all purpose flour
+- 560 g all purpose flour
 - 2 teaspoons (10 g) salt
 - 2 teaspoons (8 g) instant yeast
 - flaky sea salt
