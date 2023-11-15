@@ -2,7 +2,7 @@
 <button onclick="location.href='../recipes.html'">Back to Recipes</button>
 <img src="images/default_image.jpg" alt="Meatballs" style="float: right; margin-left: 20px; max-width: 50%;" />
 ## Ingredients
-- 2 cups (455 g) lukewarm water
+- 400 mL lukewarm water
 - 4 tablespoons olive oil
 - 540 g all purpose flour
 - 2 teaspoons (10 g) salt
