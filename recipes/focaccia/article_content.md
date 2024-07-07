@@ -1,6 +1,6 @@
 # Focaccia Bread
 <button onclick="location.href='../recipes.html'">Back to Recipes</button>
-<img src="images/default_image.jpg" alt="Meatballs" style="float: right; margin-left: 20px; max-width: 50%;" />
+<!-- <img src="images/default_image.jpg" alt="Meatballs" style="float: right; margin-left: 20px; max-width: 50%;" /> -->
 ## Ingredients
 - 440 mL lukewarm water
 - 5.5 TBSP olive oil
