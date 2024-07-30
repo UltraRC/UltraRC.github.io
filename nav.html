@@ -4,14 +4,22 @@
             <li><a href="/index.html">Home</a></li>
         </ul>
     </div>
+
+    <div class="nav_items">
+        <ul>
+            <li><a href="/recipes/recipes.html">Recipes</a></li>
+        </ul>
+    </div>
+
     <div class="nav_link_icon">
-        <a href="https://www.youtube.com/c/Ultrarc/videos" target= "blank">
-            <img src="/Images/youtubeLogo.png" alt="github logo">
+        <a href="https://www.youtube.com/c/Ultrarc/videos" target= "_blank">
+            <img src="/Images/youtubeLogo.png" alt="youtube_logo">
         </a>
     </div>
+
     <div class="nav_link_icon">
-        <a href="https://github.com/UltraRC" target= "blank">
-            <img src="/Images/githubLogo.png" alt="github logo">
+        <a href="https://github.com/UltraRC" target= "_blank">
+            <img src="/Images/githubLogo.png" alt="github_logo">
         </a>
     </div>
 </section>
@@ -25,11 +33,12 @@
         font-size: 20px;
         background-color: rgb(187, 187, 187);
         list-style-type: none;
+        overflow: hidden;
+        border-radius: 7px;
     }
 
     .nav_items {
         float:left;
-        height:20px;
         margin:0px;
         padding:0px;
     }
@@ -47,12 +56,6 @@
         margin:0px;
         padding:0px;
     }
-
-    .nav_bar li{
-	display: inline;
-	padding: 5px;
-    }
-
     
     .nav_bar ul {
         list-style-type: none;
@@ -60,10 +63,10 @@
         padding: 0;
     }
 
-
     .nav_bar li a {
+        display: inline;
         text-align: center;
-        padding: 14px 16px;
+        padding: 16px;
         text-decoration: none;
     }
 
