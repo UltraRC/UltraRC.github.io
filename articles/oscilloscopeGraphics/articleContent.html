@@ -24,3 +24,38 @@
 </p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZSrDUwyOw7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 70%; height: 350px; margin: 0 auto; display: block;"></iframe>
+
+<h2>General Purpose Graphics Library</h2>
+
+<p>
+    At this point in the project, I was getting quite excited about the possibilities. I was very impressed by how well the drawn lines looked. The problem was that drawing anything to the display required hard coding the position and timing of the beam.
+</p>
+
+<p>
+    I decided that I should write a general purpose graphics library. This library would provide provide general-purpose functions draw a large variety of different shapes. For example the void draw_center_rectangle(int32_t width, int32_t height, int32_t xpos, int32_t ypos). Allows the user to draw a rectangle easily given several basic paramaters which describe the size and shape.
+
+    There are two functions which are called to control the drawing graphics_update() and clear_screen() which both do what they say.
+</p>
+
+<p>
+    There are several limitations with this whole setup. The driver currently only supports drawing shapes with straight edges; however, this may be improved in the future to support things like Bezzier curves etc. The other limitation is how quickly the DACs can update. This translates to a limitation in the number of lines and shapes on the screen. Too many, and the frame rate drops enough for it to be vissible.
+</p>
+
+<h2>
+    Pong On An Oscilloscope!
+</h2>
+<p>
+    Obviously, it would have been a waste to write a graphics library from scratch and then not use it for it as the basis for a game. I've done a decent ammount of programming, but I've never programmed a game before. Even though pong is a very simple game, there is lots to learn from drawing the scene, managing game states, updating points, managing object collision detection and physics.
+</p>
+
+<p>
+    Here is a look at the finished game in action!
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TT7ZzPn_dco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 70%; height: 350px; margin: 0 auto; display: block;"></iframe>
+
+<p>
+    And because I think it's really cool... Here is a video of the pong game being rendered on the oscilloscope in slow motion!
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zBnkp1maNaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 70%; height: 350px; margin: 0 auto; display: block;"></iframe>
