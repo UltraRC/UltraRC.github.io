@@ -1,18 +1,69 @@
 <h1>Oscilloscope Graphics</h1>
 <h2>Project Overview</h2>
 <p>
-    It has been a common trick for a long time to use an analog oscilloscope to draw shapes and patterns to its display. This works by applying two voltages to channels 1 and 2 of the scope to control the horizontal and vertical position of the oscilloscopes electron beam. When the beam is moved quickly from one place to another, it leaves behind a bright glowing trail of green light which quickly disappears.
+    It has been a common trick for a long time to use an analog oscilloscope to draw shapes and patterns on its display. This works by applying two voltages to channels 1 and 2 of the scope to control the horizontal and vertical position of the oscilloscope's electron beam. When the beam is moved quickly from one place to another, it leaves behind a bright glowing trail of green light which quickly disappears.
 </p>
 <p>
-    The idea came to mind that I could use the digital to analog converters (DAC) of a micro-controller to generate two voltages which could be used to control the position of the beam on the scope. I used an ESP32 devlopment board which has two 10-bit DACs built in. This provides 2^10 or 1024 different voltages between 0V and 3.3V for both X and Y.
+    The idea came to mind that I could use a microcontroller to generate two voltages to control the position of the beam. I used an ESP32 development board which has two built-in 10-bit DACs. This means I am able to achieve a resolution of 1024x1024.
 </p>
 <h2>First Program!</h2>
 <p>
-    After connecting the micro to the scope, the only thing left to do is write some code! The first program which I wrote was a basic 2D particle in a box physics simulation. The particle was given a mass and initial velocity, and with collision handling and gravity was implimented, a rather convincing "bouncing ball in a box" simulation was created.
+    After connecting the microcontroller to the oscilloscope, the next thing to do was write some code! The first program I wrote was a basic particle-in-a-box physics simulation. The particle was given a mass and initial velocity with collision handling and gravity. The position of the beam represented the position of the particle. This resulted in a rather convincing "bouncing ball in a box" simulation was created. 
 </p>
+<p>
+    Below is a video showing it working.
+</p>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lEnchWlrA0M?si=DdLEtIfPl3doS2ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 70%; height: 350px; margin: 0 auto; display: block;"></iframe>
 
 <h2>Going Further</h2>
 <p>
-    While the particle simulation is a interesting, I wanted to go further. I wanted to draw lines and shapes. I first tried to enter the next
+    While the particle simulation was a cool project in and of its self, I wanted to go further. I wanted to draw lines and shapes.
 </p>
+<p>
+    The first step was to try to draw a basic shape like a square. I first tried to do this by quickly switching the beam position between the four corners of a square. My thinking being that the edges of the square would be drawn as beam travels between the corners. I was wrong. It turns out that the beam of the oscilloscope can move incredibly quickly; instead of drawing edges, it just jumps between the corners leaving four point-souces of light with nothing (or very little) in between.
+</p>
+<p>
+    What I realised I needed to do was move the beam position in small increments between the four corners. That way the beam would draw many smaller points of light closer together, hopefully providing the illusion a continuous line being drawn. 
+</p>
+<p>
+    Below is a slow motion video of some basic shapes being drawn using this method.
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZSrDUwyOw7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 70%; height: 350px; margin: 0 auto; display: block;"></iframe>
+
+<h2>General Purpose Graphics Library</h2>
+<p>
+    At this point in the project, I was getting quite excited about the possibilities. I was very impressed by how well the drawn lines looked. The problem was that drawing anything to the display required hard-coding the position and timing of the beam every time you wanted to draw a different shape. This is quite a tedious process and is easy to get wrong.
+</p>
+<p>
+    Naturally, this led me to write a driver/library to manage all of the tricky details and provide a set of easy to use functions for drawing objects to the screen.
+</p>
+<p>
+    The graphics library is really cool, because it allows you to forget about all of the annoying details of drawing individual graphical elements and focus instead on what you are drawing to the display.
+</p>
+<p>
+    There are a few limitations, however. The driver currently only supports drawing shapes with straight edges. The other limitation is how quickly the DACs can update; this translates to a limitation in the number of lines and shapes on the screen. Too many, and the frame rate drops enough for it to be visible.
+</p>
+<p>
+    <b>More info on my oscilloscope graphics library <a href="https://github.com/UltraRC/oscilloscopeGraphics" target="_blank">here!</a></b>
+</p>
+
+<h2>
+    Programming Pong on an Oscilloscope!
+</h2>
+<p>
+    Obviously, it would have been a waste of time to write a custom graphics library and then not use it for something cool. I decided to make my own version of the classic video game: Pong. While not 100% faithful to the original version, it does implement all of the basic functionality.
+</p>
+
+<p>
+    Here is a video of my version of Pong being displayed on an oscilloscope!
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TT7ZzPn_dco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 70%; height: 350px; margin: 0 auto; display: block;"></iframe>
+
+<p>
+    And because I think it's really cool... Here is a video of the game being rendered on the oscilloscope in slow motion!
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zBnkp1maNaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 70%; height: 350px; margin: 0 auto; display: block;"></iframe>
